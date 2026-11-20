@@ -18,7 +18,7 @@ for i in range(100):
     fuel_left.append(info["fuel"])
     if info["fuel"] <= 0.0:
         ran_out += 1
-env.close()
+env.close() 
 
 scores, fuel_left = np.array(scores), np.array(fuel_left)
 print(f"Average score:      {scores.mean():.1f} ± {scores.std():.1f}")
